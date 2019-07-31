@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="107.206062">
+<testcase classname="Login mercurytour application" name="login with data credentials" time="87.869143">
+<system-out><![CDATA[Given display welcome page..................................................passed
+When user opens tour application in browser.................................passed
+When user entering username as "mercury" And password as "mercury" in field.passed
+And registered user clicks login............................................passed
+Then verify login page......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login mercurytour application" name="login with invalid data credentials" time="19.336919">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.Demo.CucuPr.verify_login_application(CucuPr.java:65)&#13;&#10;&#9;at ✽.verify login application(src/test/resources/SampleFolder/NewFile.feature:30)&#13;&#10;"><![CDATA[Given display welcome page..................................................passed
+When user opens tour app in browser.........................................passed
+When user entering invalid username as "merry" And password as "mercury" in field.passed
+And clicks login............................................................passed
+Then verify login application...............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.Demo.CucuPr.verify_login_application(CucuPr.java:65)
+	at ✽.verify login application(src/test/resources/SampleFolder/NewFile.feature:30)
+]]></failure>
+</testcase>
+</testsuite>
